@@ -37,10 +37,13 @@ header .display {
       height:600px;
       padding-top:150px;
   }
+
   header .display {
     font-size: 400%;
   }
+
 }
+
 .btn-banner {
   font-weight: 600;
   color: #002157;
@@ -48,7 +51,34 @@ header .display {
   margin-right: 10px;
 }
 
- ---------------------- PARALLAX --------------------------------------
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 111px;
+    margin-bottom: 89px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 30px 50px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 10px solid blue;
+  border-radius: 47px;
+
+}
+
 .parallax {
     text-align:center;
     background-position:center center;
@@ -62,4 +92,45 @@ header .display {
     background-color: rgba(255,255,255,0.5);
 }
 
+.box1, .box2, .box3 {
+  position: relative;
+  font-family: 'Merriweather';
+  font-size: 75px; 
+  font-weight: bold; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000, margin: 10px 0 24px;
+  line-height: 50px;
+  letter-spacing: -1px; 
+  color: #DFBF84;
+  text-transform: uppercase;
+}
+
+.textEl {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.box1 {
+  background-color:#cccccc;
+  background-image: url(./images/beerlabel-collage1.jpg);
+  color: rgb(0, 51, 204); 
+}
+  
+.box2 {
+  background-color:#cccccc;
+  background-image: url(./images/ship-beer.jpg);
+  color: rgb(255, 0, 0); 
+}
+
+.box3 {
+  background-color:#5E5E5E;
+  background-image: url(./images/sip-beer.jpg);
+  color: rgb(51, 204, 51); 
+}
 

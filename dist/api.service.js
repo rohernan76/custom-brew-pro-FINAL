@@ -23,10 +23,10 @@ var ApiService = (function () {
         this.getHeaders = new http_1.Headers({
             "Accept": "application/json"
         });
-        this.url = "http://localhost:8000";
+        this.url = "http://localhost:4000";
     }
     ApiService.prototype.getJSON = function (response) {
-        console.log("getjson", response.text());
+        // console.log("getjson", response.text());
         return response.json();
     };
     ApiService.prototype.checkForError = function (response) {

@@ -17,11 +17,15 @@ var router_1 = require('@angular/router');
 var routes_1 = require('./routes');
 // import { AuthService } from './auth.service';
 var forms_1 = require('@angular/forms');
+var beer_service_1 = require('./beer.service');
 // declarations for routes ???
 var home_component_1 = require('./home/home.component');
 var about_component_1 = require('./about/about.component');
 var selections_component_1 = require('./selections/selections.component');
 var contact_component_1 = require('./contact/contact.component');
+var beer_component_1 = require('./selections/beer.component');
+var social_links_component_1 = require('./social/social-links.component');
+var beer_details_component_1 = require('./selections/beer-details.component');
 // import { AuthComponent } from './auth.component'; 
 var AppModule = (function () {
     function AppModule() {
@@ -30,17 +34,21 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
             declarations: [
+                beer_details_component_1.BeerDetailsComponent,
+                social_links_component_1.SocialLinkComponent,
+                beer_component_1.BeerComponent,
                 main_container_component_1.MainContainer,
                 home_component_1.HomeComponent,
                 about_component_1.AboutComponent,
                 selections_component_1.SelectionsComponent,
-                contact_component_1.ContactComponent,
+                contact_component_1.ContactComponent
             ],
             bootstrap: [main_container_component_1.MainContainer],
             providers: [
                 api_service_1.ApiService
             ].concat(http_1.HTTP_PROVIDERS, [
                 router_1.provideRouter(routes_1.routes),
+                beer_service_1.BeerService
             ])
         }), 
         __metadata('design:paramtypes', [])

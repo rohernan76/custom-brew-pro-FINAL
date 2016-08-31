@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 				</li>
 				<li [class.active]="router.isActive('/', true)">
 					<a href="custombrewpro.com" class="logo" title="Home"><img src="./images/homebrew-logo.jpg" /></a>
-				</li>				
+				</li>
 				<li [class.active]="router.isActive('/selections', true)">
 					<a [routerLink]="['selections']">Selections</a>
 				</li>

@@ -16,14 +16,14 @@ export class ApiService {
 		"Accept": "application/json"
 	});
 
-	url: string = "http://localhost:8000";
+	url: string = "http://localhost:4000";
 
 	constructor(private http: Http) {
 
 	}
 
 	private getJSON(response: Response) {
-		console.log("getjson", response.text());
+		// console.log("getjson", response.text());
 		return response.json();
 	}
 

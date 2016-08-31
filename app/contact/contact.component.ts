@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { ContactSubmit } from './contact.submit';
 
 @Component({
-  moduleId: module.id,
   selector: 'contact',
   template: '<div class="container-fluid">This is Contact Component</div>'
 })

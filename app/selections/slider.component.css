@@ -1,7 +1,7 @@
 input[type=range] {
   -webkit-appearance: none;
-  margin: 18px 0;
-  width: 30%;
+  margin: 5px 0;
+  width: 75%;
 }
 input[type=range]:focus {
   outline: none;
@@ -9,23 +9,34 @@ input[type=range]:focus {
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
-  cursor: pointer;
+  cursor: ew-resize;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #f0fa6a;
-  border-radius: 1.3px;
+  background: -webkit-linear-gradient(left,#ffe699 0,#962d00 47%,#36080a 100%);
+  background: linear-gradient(to right,#ffe699 0,#962d00 47%,#36080a 100%);
+  border-radius: 3px;
   border: 0.2px solid #010101;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -14px;
+   -webkit-appearance: none;
+      width: 35px;
+      height: 40px;
+
+      border-radius: 10px;
+      background-image: url(./images/hop_image.png),
+       -webkit-gradient(
+           linear,
+           left top,
+           left bottom,
+           color-stop(0, #fefefe),
+           color-stop(0.49, #dddddd),
+           color-stop(0.51, #d1d1d1),
+           color-stop(1, #a1a1a1)
+       );
+       background-size:40px;
+       background-repeat: no-repeat;
+       background-position: 75%;
+       margin-top: -5px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd;
@@ -85,4 +96,59 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
+}
+
+.slider-container label.below span {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    color: #d2c063;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: futura-pt,Futura,sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+.slider-container {
+  margin-bottom: ;
+  position: relative;
+  width: 30%;
+  display:  inline-block;
+  font-size: 20px
+}
+
+label.below {
+  width: 100%;
+  color: #332929;
+  font-family: arial,Futura,sans-serif;
+  text-align: center;
+  align-items: center;
+
+}
+
+.topTitle {
+  font-family: Righteous;
+  font-size: 50px;
+  padding: 10px;
+  color: goldenrod;
+  text-align: center;
+}
+
+#container-fluid {
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    display: flex;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 2em;
+}
+
+// .flex-item {
+//   width: 400px;
+//   height: 400px;
+//   background-color: cornflowerblue;
+//   margin: 10px;
+
 }

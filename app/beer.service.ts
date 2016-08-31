@@ -4,41 +4,58 @@ import { Observable } from "rxjs/observable";
 
 @Injectable()
 export class BeerService {
-	private beers = [];
+	public beers = [];
+	public bestBeers = [];
 	constructor(private apiService: ApiService) {
-
+		this.getAllBeers().subscribe();
+		// console.log("BeerService created");
 	}
 
-	getBestBeer(color, bitterness, alcohol) {
-		var beers = this.getAllBeers();
-		var scores = beers.map(function(beer){
-			distance = Math.sqrt((beer.color - color) + (beer.bitterness - bitterness) + (beer.alcohol - alcohol));
-
-			// distance function in 3 dminensions 
-			// return distance between beer and color, bitterness and abv
-			// Math.sqrt((beer.color - color)2 + (beer.bitterness - bitterness)2 + (beer.alcohol - alcohol)2
-		};
-
-		return scores; // scores is an observable -- we have to subscribe to it in order to get values
-	}
-		this.apiService.get('/:id').subscribe(function(res){
-
-			}); 
+	getBestBeer(colorValue, bitternessValue, alcoholValue) {
+		this.getAllBeers().subscribe(function() {
+			this.bestBeers = this.beers.map(function(beer){
+				var distance = Math.sqrt(
+					Math.pow((beer.color - colorValue), 2) + 
+					Math.pow((beer.bitterness - bitternessValue), 2) + 
+					Math.pow((beer.alcohol - alcoholValue), 2)
+				);
+				distance = Math.ceil(distance);
+				// console.log(distance);
+				return {
+					distance: distance,
+					beerName: beer.name,
+					beerImage: beer.image,
+					beerAlcohol: beer.alcohol,
+					beerColor: beer.color,
+					beerBitter: beer.bitterness,
+					beerDescrip: beer.description,
+					beerCat: beer.category,
+					beerRat: beer.rating,
+					beerComm: beer.comments
+				};
+			});
+			this.bestBeers.sort(function(a, b) {
+				return a.distance - b.distance;
+			});
+			this.bestBeers = this.bestBeers.slice(0, 3);
+		}.bind(this));
+}
 
 	getAllBeers() {
 		return new Observable(function(observer) {
-			if (this.beers) {
+			if (this.beers.length) {
 				observer.next(this.beers);
 				observer.complete();
 				return;
 			}
-
-			this.apiService.get('/getbeer').subscribe(function(res)  {
+			// console.log("Got beers!");
+			this.apiService.get('/getbeer').subscribe(function(res) {
+				// console.log(res);
 				this.beers = res; 
 				observer.next(this.beers);
 				observer.complete();
 			}.bind(this));
 		}.bind(this));
 	}
-} 
+}
 

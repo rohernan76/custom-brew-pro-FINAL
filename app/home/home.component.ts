@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
+import { SocialLinkComponent } from '../social/social-links.component';
 
 @Component({
 	selector: 'app-home',
