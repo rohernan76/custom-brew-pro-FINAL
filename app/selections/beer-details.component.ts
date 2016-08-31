@@ -24,7 +24,7 @@ import { BeerService } from '../beer.service';
 					<p class="cat">{{beer.beerCat}}</p>
 				</div>
 				<div id="cart">
-					<img class="cart" src='http://simpleicon.com/wp-content/uploads/shopping-cart.png'>
+					<img class="cart" src='http://www.theseunitedstates.net/wp-content/uploads/2011/04/icon_shopcart.png?w=147'>
 				</div>
 			</div>
 
