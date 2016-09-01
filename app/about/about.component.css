@@ -1,0 +1,86 @@
+element.style {
+}
+
+.Content.Page {
+    margin: 0px 0 0 20px;
+}
+.Content {
+    width: 650px;
+    padding: 0 10px 20px;
+    /* margin: 0 0 0 202px; */
+}
+.Content {
+    float: left;
+    width: 750px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.Left.Page {
+    float: left;
+    width: 180px;
+    border-right: 0;
+    padding: 20px 0 0;
+    margin: 0 0 0 30px;
+}
+.Left {
+    display: inline;
+    float: left;
+    margin: 10px 10px 0 15px;
+    width: 180px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 0;
+}
+.Left {
+    float: left;
+    width: 183px;
+    margin: 0 10px 0 7px;
+    display: inline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-image: url(./images/sustainable1.jpg);
+    font-size: 0.8em;
+    font-family: Palatino Linotype, Book Antiqua3, Palatino, serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    height: 100%;
+}
+
+﻿h1, h2, h3, h4 {
+    color: #d33333;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+Inherited from div#PageContent.Block.Moveable.Panel
+#PageContent {
+    margin: 20px 10px 0 0;
+    font-size: 1em;
+}
+
+﻿
+
+﻿
+
+﻿
