@@ -16,7 +16,7 @@ export class ApiService {
 		"Accept": "application/json"
 	});
 
-	url: string = "http://localhost:4000";
+	url: string = window.location.hostname + ":4000";
 
 	constructor(private http: Http) {
 
