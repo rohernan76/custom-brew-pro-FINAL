@@ -26,7 +26,7 @@ import { BeerDetailsComponent } from './beer-details.component';
 				type="range" id="myRange" min="1" max="70" value="1">
 				<label for="bitter" class="below">
 					<div>
-						<span>Bitteness (IBU)</span>
+						<span>Bitterness (IBU)</span>
 						<span>{{bitterValue | json}}</span>
 					</div>
 				</label>
