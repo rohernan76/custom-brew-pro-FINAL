@@ -3,30 +3,28 @@ import { Component } from '@angular/core';
 @Component({
 	selector: 'contact',
 	template: '
-	<div class="container">  
-		<form id="contact" action="" method="post">
-			<h3>Quick Contact</h3>
-			<h4>Contact me today, and get a reply within 24 hours!</h4>
-		<fieldset>
-			<input placeholder="Your name" type="text" tabindex="1" required autofocus/>
-		</fieldset>
-		<fieldset>
-			<input placeholder="Your Email Address" type="email" tabindex="2" required/>
-		</fieldset>
-		<fieldset>
-			<input placeholder="Your Phone Number" type="tel" tabindex="3" required/>
-		</fieldset>
-		<fieldset>
-			<input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required/>
-		</fieldset>
-		<fieldset>
-			<textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-		</fieldset>
-		<fieldset>
-			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-		</fieldset>
-		</form>
-	</div>
+	<div id="form-main">
+		<div id="form-div">
+			<form class="form" id="form1">
+	  
+				<p class="name">
+					<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name"/>
+				</p>
+
+				<p class="email">
+					<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email"/>
+				</p>
+
+				<p class="text">
+					<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+				</p>
+
+				<div class="submit">
+					<input type="submit" value="SEND" id="button-blue"/>
+					<div class="ease"></div>
+    		</div>
+    	</form>
+    </div>
 	',
 	styleUrls: ['app/contact/contact.component.css']
 })
