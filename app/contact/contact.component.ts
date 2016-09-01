@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'contact',
-	template: '
+	template: `
 	<div id="form-main">
 		<div id="form-div">
 			<form class="form" id="form1">
@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
     		</form>
     	</div>
     </div>
-	',
+	`,
 	styleUrls: ['app/contact/contact.component.css']
 })
 export class ContactComponent {
