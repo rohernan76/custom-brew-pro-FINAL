@@ -22,8 +22,9 @@ import { Component } from '@angular/core';
 				<div class="submit">
 					<input type="submit" value="SEND" id="button-blue"/>
 					<div class="ease"></div>
-    		</div>
-    	</form>
+    			</div>
+    		</form>
+    	</div>
     </div>
 	',
 	styleUrls: ['app/contact/contact.component.css']
