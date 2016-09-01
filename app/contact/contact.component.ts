@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 	<div class="container">  
 		<form id="contact" action="" method="post">
 		<h3>Quick Contact</h3>
-		<h4>Contact us today, and get reply with in 24 hours!</h4>
+		<h4>Contact me today, and get a reply with in 24 hours!</h4>
 		<fieldset>
 			<input placeholder="Your name" type="text" tabindex="1" required autofocus/>
 		</fieldset>
