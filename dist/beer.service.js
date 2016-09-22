@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var api_service_1 = require("./api.service");
-var observable_1 = require("rxjs/observable");
+var Observable_1 = require("rxjs/Observable");
 var BeerService = (function () {
     function BeerService(apiService) {
         this.apiService = apiService;
@@ -47,7 +47,7 @@ var BeerService = (function () {
         }.bind(this));
     };
     BeerService.prototype.getAllBeers = function () {
-        return new observable_1.Observable(function (observer) {
+        return new Observable_1.Observable(function (observer) {
             if (this.beers.length) {
                 observer.next(this.beers);
                 observer.complete();

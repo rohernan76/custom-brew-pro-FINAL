@@ -15,7 +15,8 @@ var ContactComponent = (function () {
     ContactComponent = __decorate([
         core_1.Component({
             selector: 'contact',
-            template: '<div class="container-fluid">This is Contact Component</div>'
+            template: "\n\t<div class=\"container\">  \n\t\t<form id=\"contact\" action=\"\" method=\"post\">\n\t\t<h3>Quick Contact</h3>\n\t\t<h4>Contact me today, and let's get down to beer tax! Expect a reply within 24 hours!</h4>\n\t\t<fieldset>\n\t\t\t<input placeholder=\"Your name\" type=\"text\" tabindex=\"1\" required autofocus/>\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<input placeholder=\"Your Email Address\" type=\"email\" tabindex=\"2\" required/>\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<input placeholder=\"Your Phone Number\" type=\"tel\" tabindex=\"3\" required/>\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<input placeholder=\"Your Web Site starts with http://\" type=\"url\" tabindex=\"4\" required/>\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<textarea placeholder=\"Type your Message Here....\" tabindex=\"5\" required></textarea>\n\t\t</fieldset>\n\t\t<fieldset>\n\t\t\t<button name=\"submit\" type=\"submit\" id=\"contact-submit\" data-submit=\"...Sending\">Submit</button>\n\t\t</fieldset>\n\t\t</form>\n</div>\n\t",
+            styleUrls: ['app/contact/contact.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ContactComponent);
