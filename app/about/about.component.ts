@@ -31,6 +31,7 @@ import { Component } from '@angular/core';
 							<br>
 							<hr>
 							<h3>Robert Hernandez - Owner/Brewmaster</h3>
+							<br>
 							<p><img class="__mce_add_custom__" style="float: right;" title="Robert Hernandez" src="./images/Head-brewmaster-blue-mancha-brewing-BEER.png" alt="Your brewer, Robert Hernandez" width="400" height="300">I grew up in Vista, California, which oddly became a brewing hub. By the time I was 27 years old, I had taught myself to homebrew with the use of a brewing kit that my wife gave me. My best, local renowned beer so far is my clone of Russian River's Pliny the Elder--except he called his "Marley the Elder" named after his first dogson, Marley. Cheers!</p>
 						</div>
 					</div>
